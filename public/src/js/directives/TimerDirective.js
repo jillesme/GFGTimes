@@ -1,4 +1,4 @@
-function minuteTimer ($interval) {
+function minuteTimer () {
   return {
     restrict: 'EA',
     scope: {
@@ -6,6 +6,7 @@ function minuteTimer ($interval) {
     },
     controller: function () {
       // This is going to be a timer.
+      // Might want to use $interval or something
     },
     template: [
       '<div>',
