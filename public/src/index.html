@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gfgtimes">
+<!-- 
+Hey, cool that you're looking in the source code. This is an
+AngularJS app I made to check the grill times for my 
+George Foreman Grill. 
+
+I got the cooking times from the official website:
+http://www.georgeforeman.co.uk/pdf/18910_gfx_grill_ib_551-660.pdf
+
+If you want to add something just make a PR on GitHub or contact me!
+My email is info-at-jilles-dot-me :)
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>George Foreman Grill Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div ng-view></div>
+
+  <script src="js/lib.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- @if build='prod' -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date; e=o.createElement(i);r=o.getElementsByTagName(i)[0]; e.src='//www.google-analytics.com/analytics.js'; r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); ga('create','UA-53858889-2','auto');ga('send','pageview');
+  </script>
+  <!-- @endif -->
+
+</body>
+</html>

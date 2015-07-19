@@ -1,0 +1,18 @@
+<div>
+
+  <input id="search-bar" type="text" placeholder="burger, cheese, peppers" autofocus
+  ng-model="food" />
+
+    <div class="items-list">
+      <ul ng-repeat="item in vm.items" ng-show="result.length">
+          <h2>{{ item.category }}</h2>
+          <li ng-repeat="food in item.items | filter: food as result">
+              <a href="/#/{{item.categoryUrl}}/{{food.url}}">
+                  {{ food.name }}
+                  <span>{{ food.time }}min</span>
+              </a>
+          </li>
+      </ul>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "gfgtimes",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jillesme/gfgtimes",
+  "authors": [
+    "Jilles Soeters <info@jilles.me>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "spec"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-route": "~1.4.3"
+  }
+}

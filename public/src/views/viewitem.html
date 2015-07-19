@@ -1,0 +1,8 @@
+<div>
+    <h1>{{ vm.title }}</h1>
+
+    <p>Needs to grill for <strong>{{ vm.time }}</strong> min.</p>
+
+    <div ng-repeat="minutes in vm.timers" minute-timer minutes="{{minutes}}"></div>
+
+</div>
