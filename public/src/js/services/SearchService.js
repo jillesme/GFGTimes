@@ -1,6 +1,7 @@
 function SearchService () {
   var SearchService = {};
 
+  // TODO: Refactor this!!!
   SearchService.findItem = function (category, url) {
 
     var result = {};

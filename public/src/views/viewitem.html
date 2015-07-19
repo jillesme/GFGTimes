@@ -3,6 +3,17 @@
 
     <p>Needs to grill for <strong>{{ vm.time }}</strong> min.</p>
 
-    <div ng-repeat="minutes in vm.timers" minute-timer minutes="{{minutes}}"></div>
+    <button ng-click="vm.goBack()">Go back</button>
+
+    <hr />
+
+    <p>You'll have to start a timer yourself for now, I really want
+      to implement a timer feature but haven't got around to it yet :(</p>
+
+    <p>If you're a developer interested in contributing check out the
+      <a href="https://github.com/jillesme/GFGTimes" target="_blank">
+        GitHub repo </a></p>
+
+    
 
 </div>
