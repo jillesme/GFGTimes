@@ -233,8 +233,8 @@ function SearchService () {
       ]
     },
     {
-      category: 'Sandwitches',
-      categoryUrl: 'sandwitches',
+      category: 'Sandwiches',
+      categoryUrl: 'sandwiches',
       items: [
         {
           url: 'cheese',

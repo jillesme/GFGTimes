@@ -7,7 +7,12 @@
       <ul ng-repeat="item in vm.items" ng-show="result.length">
           <h2>{{ item.category }}</h2>
           <li ng-repeat="food in item.items | filter: food as result">
+  <!-- @if build='dev' -->
               <a href="/#/{{item.categoryUrl}}/{{food.url}}">
+  <!-- @endif -->
+  <!-- @if build='prod' -->
+              <a href="/gfgtimes/#/{{item.categoryUrl}}/{{food.url}}">
+  <!-- @endif -->
                   {{ food.name }}
                   <span>{{ food.time }}min</span>
               </a>

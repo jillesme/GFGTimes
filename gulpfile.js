@@ -59,6 +59,7 @@ gulp.task('sass:dev', function () {
 gulp.task('scripts:dev', function () {
   return gulp.src(paths.scripts)
     .pipe(concat('app.js'))
+    .pipe(preprocess({ context: { build: 'dev' } }))
     .pipe(gulp.dest('public/dist/js'));
 });
 
@@ -90,6 +91,7 @@ gulp.task('sass:prod', function () {
 
 gulp.task('scripts:prod', function () {
   return gulp.src(paths.scripts)
+    .pipe(preprocess({ context: { build: 'prod' } }))
     .pipe(concat('app.js'))
     .pipe(uglify({ mangle: false }))
     .pipe(gulp.dest('public/dist/js'));
